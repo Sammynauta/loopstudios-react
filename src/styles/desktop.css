@@ -1,0 +1,74 @@
+.desktop {
+    display: block;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+.desktop .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+.desktop .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+    place-items: center;
+}
+.desktop .cardimg {
+    cursor: pointer;
+}
+.desktop .cardimg img {
+    width: 100%;
+}
+.desktop .cardimg:hover {
+    opacity: 0.4;
+    transition: 0.4s;
+}
+
+.desktop .btn-container {
+    text-align: center;
+}
+
+.desktop .btn-container .btn {
+    border: 2px solid black;
+    padding: 10px 30px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.desktop .btn-container .btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.card {
+    position: relative;
+}
+
+.card .titlecard {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 15px 15px;
+    color: #fff;
+    font-size: 24px;
+    width: 150px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.card:hover .titlecard {
+    color:black;
+}
+
+@media (max-width: 999px) {
+    .desktop {
+        display: none;
+    }
+}

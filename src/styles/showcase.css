@@ -1,0 +1,43 @@
+.showcase {
+    background: url('../assets/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+  }
+
+.showcase .overlay {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    padding: 0 20px;
+}
+
+.showcase .overlay h1 {
+  color: #fff;
+  font-size: 46px;
+  line-height: 1.1;
+  border: 2px solid #fff;
+  padding: 20px;
+  width: 450px;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+    .showcase {
+      background: url('../assets/mobile/image-hero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+    }
+    .overlay h1 {
+      font-size: 36px;
+    }
+}
+@media (max-width: 576px) {
+    .showcase .overlay h1 {
+      font-size: 28px;
+    }
+}

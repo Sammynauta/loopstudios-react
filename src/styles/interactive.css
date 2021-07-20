@@ -1,0 +1,73 @@
+ .interactive {
+    position: relative;
+    padding: 50px 220px;
+}
+
+.text-interactive h2{
+  text-transform: uppercase;
+  width: 250px;
+  padding: 0 0 20px 40px;
+}
+
+.text-interactive {
+    display: block;
+    position: absolute;
+    width: 600px;
+    bottom: 50px;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    right: 120px;
+}
+
+@media (max-width: 1280px) {
+  .text-interactive {
+    display: block;
+    position: absolute;
+    width: 600px;
+    bottom: -30px;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    right: 120px;
+  }
+  .img-interactive {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .interactive {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .text-interactive h2 {
+    padding: 0px;
+    font-size: 2rem;
+    width: 300px;
+  }
+  .text-interactive {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    bottom: 0px;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 800px;
+    right: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .img-interactive {
+    width: 100%;
+  }
+
+}

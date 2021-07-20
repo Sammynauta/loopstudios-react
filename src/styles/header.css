@@ -1,0 +1,92 @@
+.header { 
+    position: absolute;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+}
+
+.ladoesquerdo {
+    margin: 32px;
+}
+
+.ladodireito {
+    display: flex;
+    margin: 32px;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 8px;
+    color:  white;
+}
+
+.nav-item a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover  {
+    text-decoration: 2px underline white;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-menu {
+    display: none;
+}
+.menu-x {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: -150%;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        transition: all 0.5s ease; 
+    }
+    .nav-menu.active {
+        background-color: black;
+        color: white;
+        left: 0;
+        z-index: 2;
+        opacity: 1;
+        transition: all 0.5s ease;
+        position: fixed;
+        text-transform: uppercase;
+        justify-content: flex-start;
+    }
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    .nav-item {
+        line-height: 2;
+        margin-left: 16px;
+    }
+    .menu-icon {display: block;}
+    .menu-x { display: block;}
+}
